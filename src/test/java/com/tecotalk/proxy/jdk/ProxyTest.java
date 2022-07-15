@@ -1,4 +1,4 @@
-package com.tecotalk.proxy;
+package com.tecotalk.proxy.jdk;
 
 import java.lang.reflect.Proxy;
 import org.junit.jupiter.api.DisplayName;
@@ -15,6 +15,7 @@ class ProxyTest {
                 new LoggingHandler(new OrderServiceImpl())); //부가 기능과 위임할 타겟
         Long orderId = orderService.save(new Order());
         orderService.getOne(orderId);
+        System.out.println(orderService.getClass());
     }
 
     @DisplayName("메서드 이름이 get으로 시작하지 않으면 조회 로그를 찍지 않는다.")

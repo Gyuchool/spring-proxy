@@ -1,6 +1,6 @@
 package tmp;
 
-import com.tecotalk.proxy.Order;
+import com.tecotalk.proxy.jdk.Order;
 
 public class OrderResponse {
     private final Long id;

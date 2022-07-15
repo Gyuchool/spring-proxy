@@ -1,4 +1,4 @@
-package com.tecotalk.proxy;
+package com.tecotalk.proxy.jdk;
 
 public class OrderServiceImpl implements OrderService {
 

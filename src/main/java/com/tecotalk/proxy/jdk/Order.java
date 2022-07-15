@@ -1,4 +1,4 @@
-package com.tecotalk.proxy;
+package com.tecotalk.proxy.jdk;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +15,7 @@ public class Order {
 
     private int count;
 
-    protected Order() {
+    public Order() {
     }
 
     public Long getId() {
